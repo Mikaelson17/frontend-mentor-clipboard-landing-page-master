@@ -1,0 +1,258 @@
+/* Variables */
+:root {
+    /* Primary */
+
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    /* Neutral */
+
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --font-fam: "Bai Jamjuree", sans-serif;
+}
+
+/* Global Rules */
+.container{
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: var(--font-fam);
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    color: var(--Grayish-Blue);
+}
+/* Mobile (Meduim) */
+@media (min-width:375px) {
+
+    .container {
+        width: 350px;
+    }
+}
+
+/* Mobile (Large) */
+@media (min-width:425px) {
+
+    .container {
+        width: 400px;
+    }
+}
+
+/* Small */
+@media (min-width:768px) {
+
+    .container {
+        width: 750px;
+    }
+}
+
+/* Meduim */
+@media (min-width:992px) {
+
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width:1200px) {
+
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Styling Part */ 
+header {
+    text-align: center;
+}
+header .upper {
+    background: url(../images/bg-header-desktop.png);
+    padding: 80px 0;
+    background-size: cover;
+}
+
+header .upper img {
+    width: 90px;
+}
+
+/* header .upper h1 {
+    font-size: 30px;
+    margin-top: 34px;
+} */
+
+header p {
+    font-size: 18px;
+    color: var(--Grayish-Blue);
+    margin-top: 30px;
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+    line-height: 1.6;
+
+}
+
+.btns {
+    margin-top: 40px;
+
+} 
+
+.btn {
+    display: inline-block;
+    margin: 10px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.btns .ios {
+    background-color: var(--Strong-Cyan);
+} 
+.btns .mac {
+    background-color: var(--Light-Blue);
+    
+}
+
+/* main section styel */
+main {
+    margin: 60px auto;
+
+}
+main .features {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+
+main .features img {
+    width: 48%;
+    object-fit: contain;
+}
+
+main .container {
+    margin-top: 100px;
+}
+
+main .container p {
+    width: 40%;
+    display: inline-block;
+}
+
+main > img {
+
+    width: 50%;
+    margin: 70px auto;
+    display: block;
+
+}
+
+main .workFlow {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 40px;
+    gap: 40px;
+}
+
+main .workFlow > div {
+
+    text-align: center;
+}
+
+main .workFlow > div h1 {
+    font-size: 24px;
+}
+
+main .images {
+    display: flex;
+    justify-content: space-around;
+}
+
+main .images img {
+    object-fit: contain;
+}
+
+/* Footer */
+footer  {
+    background-color: hsl(201, 11%, 66%, 40%);
+    padding: 100px 0;
+
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer img {
+
+    width: 40px;
+
+}
+
+footer a {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 12px;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+footer a:hover {
+    color: var(--Strong-Cyan);
+}
+
+footer a img {
+    width: 20px;
+}
+
+footer .block a {
+    display: block;
+    margin: 10px auto;
+}
+
+footer .socials {
+    margin-left: 80px;
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
