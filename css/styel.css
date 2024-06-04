@@ -128,6 +128,10 @@ header p {
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 .btns .ios {
     background-color: var(--Strong-Cyan);
@@ -192,6 +196,7 @@ main .workFlow > div h1 {
 main .images {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 main .images img {
@@ -244,6 +249,43 @@ footer .socials {
     margin-left: 80px;
     display: flex;
     gap: 30px;
+}
+
+/* Mobile Version */
+
+@media (max-width: 767px) {
+    main .features,
+    main .workFlow,
+    main .images,
+    footer .container,
+    footer .socials {
+        flex-direction: column;
+
+}
+
+main .images {
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+main .features img{
+    margin: auto;
+}
+
+main .features .options {
+    text-align: center;
+    margin: auto 10px;
+}
+
+main .container p,
+header p {
+    width: 80%;
+}
+
+footer .socials {
+    margin: 30px auto;
+}
 }
 
 
